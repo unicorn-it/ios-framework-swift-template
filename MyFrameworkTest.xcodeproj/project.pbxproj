@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		467A1AF51C805455006D617B /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A1AF41C805455006D617B /* MyFramework.framework */; };
+		467A1AF61C805455006D617B /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 467A1AF41C805455006D617B /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		469353471C7F186E00A5A852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469353461C7F186E00A5A852 /* AppDelegate.swift */; };
 		469353491C7F186F00A5A852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469353481C7F186F00A5A852 /* ViewController.swift */; };
 		4693534C1C7F186F00A5A852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4693534A1C7F186F00A5A852 /* Main.storyboard */; };
@@ -14,7 +16,22 @@
 		469353511C7F186F00A5A852 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4693534F1C7F186F00A5A852 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4693535B1C7F1DAE00A5A852 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				467A1AF61C805455006D617B /* MyFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		467A1AF41C805455006D617B /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFramework.framework; sourceTree = "<group>"; };
 		469353431C7F186E00A5A852 /* MyFrameworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrameworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469353461C7F186E00A5A852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469353481C7F186F00A5A852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467A1AF51C805455006D617B /* MyFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +56,7 @@
 		4693533A1C7F186E00A5A852 = {
 			isa = PBXGroup;
 			children = (
+				467A1AF41C805455006D617B /* MyFramework.framework */,
 				469353451C7F186E00A5A852 /* MyFrameworkTest */,
 				469353441C7F186E00A5A852 /* Products */,
 			);
@@ -74,6 +93,7 @@
 				4693533F1C7F186E00A5A852 /* Sources */,
 				469353401C7F186E00A5A852 /* Frameworks */,
 				469353411C7F186E00A5A852 /* Resources */,
+				4693535B1C7F1DAE00A5A852 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -249,6 +269,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFrameworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.framework.test.MyFrameworkTest;
@@ -260,6 +284,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = MyFrameworkTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.my.framework.test.MyFrameworkTest;
@@ -286,6 +314,7 @@
 				469353571C7F186F00A5A852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
