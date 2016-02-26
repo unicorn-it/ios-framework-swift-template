@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		467A1AF51C805455006D617B /* MyFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 467A1AF41C805455006D617B /* MyFramework.framework */; };
 		467A1AF61C805455006D617B /* MyFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 467A1AF41C805455006D617B /* MyFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		467A1AF81C805813006D617B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 467A1AF71C805813006D617B /* README.md */; };
 		469353471C7F186E00A5A852 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469353461C7F186E00A5A852 /* AppDelegate.swift */; };
 		469353491C7F186F00A5A852 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469353481C7F186F00A5A852 /* ViewController.swift */; };
 		4693534C1C7F186F00A5A852 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4693534A1C7F186F00A5A852 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		467A1AF41C805455006D617B /* MyFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyFramework.framework; sourceTree = "<group>"; };
+		467A1AF71C805813006D617B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		469353431C7F186E00A5A852 /* MyFrameworkTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFrameworkTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469353461C7F186E00A5A852 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469353481C7F186F00A5A852 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 		4693533A1C7F186E00A5A852 = {
 			isa = PBXGroup;
 			children = (
+				467A1AF71C805813006D617B /* README.md */,
 				467A1AF41C805455006D617B /* MyFramework.framework */,
 				469353451C7F186E00A5A852 /* MyFrameworkTest */,
 				469353441C7F186E00A5A852 /* Products */,
@@ -142,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				467A1AF81C805813006D617B /* README.md in Resources */,
 				469353511C7F186F00A5A852 /* LaunchScreen.storyboard in Resources */,
 				4693534E1C7F186F00A5A852 /* Assets.xcassets in Resources */,
 				4693534C1C7F186F00A5A852 /* Main.storyboard in Resources */,
